@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    //Correct way to access DOM element with error handling
+    const element = document.getElementById("myDiv");
+    if(element){
+        element.innerHTML = "Hello, world!";
+    } else {
+        console.error("Element with id 'myDiv' not found.");
+    }
+  </script>
+</body>
+</html>
